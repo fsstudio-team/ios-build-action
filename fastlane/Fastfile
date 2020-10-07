@@ -64,6 +64,7 @@ platform :ios do
         clean: true,
         export_method: ENV["EXPORT_METHOD"],
         export_options: {
+          compileBitcode: false,
           provisioningProfiles: {
             "com.fsstudio.gbar" => "Apple_Dist_6-22-exp",
             "com.fsstudio.*" => "Apple_Dist_6-22-exp"
@@ -79,6 +80,7 @@ platform :ios do
         clean: true,
         export_method: ENV["EXPORT_METHOD"],
         export_options: {
+          compileBitcode: false,
           provisioningProfiles: {
             "com.fsstudio.gbar" => "Apple_Dist_6-22-exp",
             "com.fsstudio.*" => "Apple_Dist_6-22-exp"
